@@ -30,7 +30,7 @@ const WALK_FRAMES = [
 const ACTION_FRAMES = [{ x: 0, y: 0, w: 306, h: 471 }, { x: 310, y: 0, w: 367, h: 336 }, { x: 0, y: 475, w: 340, h: 471 }, { x: 344, y: 475, w: 271, h: 318 }];
 const ACT = { interact: 0, plant: 1, water: 2, collect: 3 };
 
-music.loop = true; music.volume = 0.4;
+
 /*
 const music = new Audio('assets/audio/mars-theme.mp3');
 const sfxBlip = new Audio('assets/audio/blip.mp3');
@@ -46,7 +46,7 @@ const sfxChime = new Audio('assets/audio/hey.mp3');
 const sfxLaunch = new Audio('assets/audio/hey.mp3');
 const sfxSting = new Audio('assets/audio/hey.mp3');
 //burayı sil bitir
-
+music.loop = true; music.volume = 0.4;
 
 function play(a) { a.currentTime = 0; a.play().catch(() => {}); }
 let audioOn = false;
