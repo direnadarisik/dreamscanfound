@@ -19,7 +19,11 @@ function resize() {
 addEventListener('resize', resize);
 resize();
 
-function loadImg(name) { const img = new Image(); img.src = `assets/images/${name}.webp`; return img; }
+function loadImg(name) {
+  const img = new Image();
+  img.src = `assets/${name}.webp`;
+  return img;
+}
 const IMG = {};
 ['mars-bg', 'habitat', 'greenhouse', 'solar-panel', 'rover', 'astronaut', 'astronaut-walk', 'astronaut-action', 'alien',
   'water-tank', 'water-recycler', 'water-purifier', 'ice-extractor', 'isru-plant', 'rocket', 'earth', 'spacecraft'].forEach(n => IMG[n] = loadImg(n));
