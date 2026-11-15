@@ -35,21 +35,12 @@ const ACTION_FRAMES = [{ x: 0, y: 0, w: 306, h: 471 }, { x: 310, y: 0, w: 367, h
 const ACT = { interact: 0, plant: 1, water: 2, collect: 3 };
 
 
-/*
+
 const music = new Audio('assets/audio/mars-theme.mp3');
 const sfxBlip = new Audio('assets/audio/blip.mp3');
 const sfxChime = new Audio('assets/audio/chime.mp3');
 const sfxLaunch = new Audio('assets/audio/rocket-launch.mp3');
 const sfxSting = new Audio('assets/audio/title-sting.mp3');
-*/
-
-//burayı sil başla
-const music = new Audio('assets/audio/hey.mp3');
-const sfxBlip = new Audio('assets/audio/hey.mp3');
-const sfxChime = new Audio('assets/audio/hey.mp3');
-const sfxLaunch = new Audio('assets/audio/hey.mp3');
-const sfxSting = new Audio('assets/audio/hey.mp3');
-//burayı sil bitir
 music.loop = true; music.volume = 0.4;
 
 function play(a) { a.currentTime = 0; a.play().catch(() => {}); }
